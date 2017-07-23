@@ -23,7 +23,7 @@ Parent POM for all projects using [AORepo](https://aorepo.org/) as their artifac
 ## Project Links
 * [Project Home](https://aorepo.org/parent/)
 * [Changelog](https://aorepo.org/parent/changelog)
-* [Maven Repository](https://aorepo.org/maven2/org/aorepo/aorepo-parent/)
+* [Maven Repository](https://aorepo.org/maven2)
 * [GitHub](https://github.com/aoindustries/aorepo-parent)
 
 ## Contact Us
