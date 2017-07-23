@@ -18,7 +18,7 @@
 	</a>
 </p>
 
-Parent POM for all projects using [AORepo](https://aorepo.org/) as their artifact repository.
+Parent POM for all [AORepo](https://aorepo.org/) packages.
 
 ## Project Links
 * [Project Home](https://aorepo.org/parent/)

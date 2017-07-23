@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-aorepo-parent - Parent POM for all projects using AORepo as their artifact repository.
+aorepo-parent - Parent POM for all AORepo packages.
 Copyright (C) 2017  AO Industries, Inc.
     support@aoindustries.com
     7262 Bull Pen Cir
@@ -63,7 +63,7 @@ along with aorepo-parent.  If not, see <http://www.gnu.org/licenses />.
 		<shortTitle>Parent</shortTitle>
 		<!-- The HTML format of the description -->
 		<description.html>${project.description}</description.html>
-		<!-- Can't use as would disturb the default: <description.html><![CDATA[Parent POM for all projects using <a target="_top" href="https://aorepo.org/">AORepo</a> as their artifact repository.]]></description.html> -->
+		<!-- Can't use as would disturb the default: <description.html><![CDATA[Parent POM for all <a target="_top" href="https://aorepo.org/">AORepo</a> packages.]]></description.html> -->
 		<!-- Taglib reference line for javadocs -->
 		<javadoc.taglibReference><!-- Default is none --></javadoc.taglibReference>
 		<!-- Modules section for javadocs -->
@@ -76,7 +76,7 @@ along with aorepo-parent.  If not, see <http://www.gnu.org/licenses />.
 
 	<name>AORepo Parent</name>
 	<url>https://aorepo.org/parent/</url>
-	<description>Parent POM for all projects using AORepo as their artifact repository.</description>
+	<description>Parent POM for all AORepo packages.</description>
 	<inceptionYear>2017</inceptionYear>
 
 	<licenses>
