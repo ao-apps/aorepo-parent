@@ -37,6 +37,7 @@ along with aorepo-parent.  If not, see <http://www.gnu.org/licenses />.
 		shortTitle="Changelog"
 		tocLevels="1"
 		datePublished="2017-07-23T15:20:14-0500"
+		dateModified="2017-07-24T09:10:20-0500"
 	>
 		<!-- The current snapshot, unreleased version -->
 		<c:set var="version" value="@{org.aorepo:aorepo-parent:pom.version}" />
@@ -50,6 +51,7 @@ along with aorepo-parent.  If not, see <http://www.gnu.org/licenses />.
 				version="#{version}"
 				groupId="@{documented.groupId}"
 				artifactId="@{documented.artifactId}"
+				repository="https://aorepo.org/maven2"
 				scmUrl="@{documented.scm.url}"
 			>
 				<ul>
