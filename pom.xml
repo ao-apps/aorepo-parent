@@ -71,7 +71,7 @@ along with aorepo-parent.  If not, see <http://www.gnu.org/licenses />.
 		<!-- Related Projects section for javadocs -->
 		<javadoc.relatedProjects><!-- Default is none --></javadoc.relatedProjects>
 		<!-- Google Analytics tracking code for the javadocs -->
-		<google.analytics.trackingId>TODO</google.analytics.trackingId>
+		<google.analytics.trackingId>UA-86871646-3</google.analytics.trackingId>
 	</properties>
 
 	<name>AORepo Parent</name>
