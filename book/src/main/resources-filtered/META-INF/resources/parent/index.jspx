@@ -34,6 +34,7 @@ along with aorepo-parent.  If not, see <http://www.gnu.org/licenses />.
 		shortTitle="@{documented.shortTitle}"
 		description="@{documented.description}"
 		datePublished="2017-07-23T15:20:14-0500"
+		dateModified="2017-07-28T22:47:29-0500"
 	>
 		<core:child page="changelog.jspx" />
 		<ao:include
@@ -51,7 +52,7 @@ along with aorepo-parent.  If not, see <http://www.gnu.org/licenses />.
 			<ul>
 				<li><core:link page="index.jspx">Project Home</core:link></li>
 				<li><core:link page="changelog.jspx">Changelog</core:link></li>
-				<li><ao:a href="https://aorepo.org/maven2">Maven Repository</ao:a></li>
+				<li><ao:a href="https://aorepo.org/maven2/">Maven Repository</ao:a></li>
 				<li><ao:a href="@{documented.scm.url}">GitHub</ao:a></li>
 			</ul>
 		</section:section>

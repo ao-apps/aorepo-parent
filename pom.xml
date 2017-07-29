@@ -112,7 +112,7 @@ along with aorepo-parent.  If not, see <http://www.gnu.org/licenses />.
 	<repositories>
 		<repository>
 			<id>aorepo-repository</id>
-			<url>https://aorepo.org/maven2</url>
+			<url>https://aorepo.org/maven2/</url>
 			<releases>
 				<enabled>true</enabled>
 				<updatePolicy>never</updatePolicy>
@@ -465,7 +465,7 @@ along with aorepo-parent.  If not, see <http://www.gnu.org/licenses />.
 			<li><a target="_top" href="${project.url}changelog">Changelog</a></li>
 			${javadoc.taglibReference}
 			<li><a target="_top" href="${project.url}apidocs/">API Docs</a></li>
-			<li><a target="_top" href="https://aorepo.org/maven2">Maven Repository</a></li>
+			<li><a target="_top" href="https://aorepo.org/maven2/">Maven Repository</a></li>
 			<li><a target="_top" href="${project.scm.url}">GitHub</a></li>
 		</ul>
 	</div>
