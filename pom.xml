@@ -29,9 +29,7 @@ along with aorepo-parent.  If not, see <http://www.gnu.org/licenses />.
 		<maven>3.3.1</maven>
 	</prerequisites>
 
-	<groupId>org.aorepo</groupId>
-	<artifactId>aorepo-parent</artifactId>
-	<version>1.1.0-SNAPSHOT</version>
+	<groupId>org.aorepo</groupId><artifactId>aorepo-parent</artifactId><version>1.1.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<properties>
@@ -173,9 +171,7 @@ along with aorepo-parent.  If not, see <http://www.gnu.org/licenses />.
 			<plugins>
 				<!-- Default to using -Xlint and showing warnings -->
 				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-compiler-plugin</artifactId>
-					<version>3.7.0</version>
+					<groupId>org.apache.maven.plugins</groupId><artifactId>maven-compiler-plugin</artifactId><version>3.7.0</version>
 					<configuration>
 						<compilerArgs>
 							<arg>-Xlint</arg>
@@ -187,9 +183,7 @@ along with aorepo-parent.  If not, see <http://www.gnu.org/licenses />.
 					</configuration>
 				</plugin>
 				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-resources-plugin</artifactId>
-					<version>3.1.0</version>
+					<groupId>org.apache.maven.plugins</groupId><artifactId>maven-resources-plugin</artifactId><version>3.1.0</version>
 					<configuration>
 						<useDefaultDelimiters>false</useDefaultDelimiters>
 						<delimiters>
@@ -224,9 +218,7 @@ along with aorepo-parent.  If not, see <http://www.gnu.org/licenses />.
 				</plugin>
 				<!-- We want clean output such that anything visible is something that must be addressed -->
 				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-surefire-plugin</artifactId>
-					<version>2.21.0</version><!-- 2.8.1 is quiet, 2.9 still shows some output even with printSummary=false -->
+					<groupId>org.apache.maven.plugins</groupId><artifactId>maven-surefire-plugin</artifactId><version>2.21.0</version><!-- 2.8.1 is quiet, 2.9 still shows some output even with printSummary=false -->
 					<configuration>
 						<printSummary>false</printSummary>
 						<redirectTestOutputToFile>true</redirectTestOutputToFile>
@@ -235,53 +227,35 @@ along with aorepo-parent.  If not, see <http://www.gnu.org/licenses />.
 				<!-- We need newer dependency plugin for Java 8 compatibility -->
 				<!-- See https://issues.apache.org/jira/browse/MDEP-439 -->
 				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-dependency-plugin</artifactId>
-					<version>3.1.1</version>
+					<groupId>org.apache.maven.plugins</groupId><artifactId>maven-dependency-plugin</artifactId><version>3.1.1</version>
 				</plugin>
 				<!-- Supporting packaging of "bundle" for OSGI bundles -->
 				<plugin>
-					<groupId>org.apache.felix</groupId>
-					<artifactId>maven-bundle-plugin</artifactId>
-					<version>3.5.0</version>
+					<groupId>org.apache.felix</groupId><artifactId>maven-bundle-plugin</artifactId><version>3.5.0</version>
 				</plugin>
 				<!-- Other plugins used below -->
 				<plugin>
-					<groupId>org.codehaus.mojo</groupId>
-					<artifactId>build-helper-maven-plugin</artifactId>
-					<version>3.0.0</version>
+					<groupId>org.codehaus.mojo</groupId><artifactId>build-helper-maven-plugin</artifactId><version>3.0.0</version>
 				</plugin>
 				<plugin>
-					<groupId>io.reformanda.semper</groupId>
-					<artifactId>dependencyversion-maven-plugin</artifactId>
-					<version>1.0.1</version>
+					<groupId>io.reformanda.semper</groupId><artifactId>dependencyversion-maven-plugin</artifactId><version>1.0.1</version>
 				</plugin>
 				<!--
 				<plugin>
-					<groupId>org.sonatype.plugins</groupId>
-					<artifactId>nexus-staging-maven-plugin</artifactId>
-					<version>1.6.8</version>
+					<groupId>org.sonatype.plugins</groupId><artifactId>nexus-staging-maven-plugin</artifactId><version>1.6.8</version>
 				</plugin>
 				-->
 				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-release-plugin</artifactId>
-					<version>2.5.3</version>
+					<groupId>org.apache.maven.plugins</groupId><artifactId>maven-release-plugin</artifactId><version>2.5.3</version>
 				</plugin>
 				<plugin>
-					<groupId>org.codehaus.mojo</groupId>
-					<artifactId>versions-maven-plugin</artifactId>
-					<version>2.5</version>
+					<groupId>org.codehaus.mojo</groupId><artifactId>versions-maven-plugin</artifactId><version>2.5</version>
 				</plugin>
 				<plugin>
-					<groupId>org.codehaus.mojo</groupId>
-					<artifactId>buildnumber-maven-plugin</artifactId>
-					<version>1.4</version>
+					<groupId>org.codehaus.mojo</groupId><artifactId>buildnumber-maven-plugin</artifactId><version>1.4</version>
 				</plugin>
 				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-gpg-plugin</artifactId>
-					<version>1.6</version>
+					<groupId>org.apache.maven.plugins</groupId><artifactId>maven-gpg-plugin</artifactId><version>1.6</version>
 				</plugin>
 				<!--
 					Setup a few global plugin versions so we don't have to specify elsewhere.
@@ -289,63 +263,42 @@ along with aorepo-parent.  If not, see <http://www.gnu.org/licenses />.
 					This also keeps the output of versions:display-plugin-updates more meaningful.
 				-->
 				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-clean-plugin</artifactId>
-					<version>3.1.0</version>
+					<groupId>org.apache.maven.plugins</groupId><artifactId>maven-clean-plugin</artifactId><version>3.1.0</version>
 				</plugin>
 				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-deploy-plugin</artifactId>
-					<version>2.8.2</version>
+					<groupId>org.apache.maven.plugins</groupId><artifactId>maven-deploy-plugin</artifactId><version>2.8.2</version>
 				</plugin>
 				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-install-plugin</artifactId>
-					<version>2.5.2</version>
+					<groupId>org.apache.maven.plugins</groupId><artifactId>maven-install-plugin</artifactId><version>2.5.2</version>
 				</plugin>
 				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-jar-plugin</artifactId>
-					<version>3.1.0</version>
+					<groupId>org.apache.maven.plugins</groupId><artifactId>maven-jar-plugin</artifactId><version>3.1.0</version>
 				</plugin>
 				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-war-plugin</artifactId>
-					<version>3.2.1</version>
+					<groupId>org.apache.maven.plugins</groupId><artifactId>maven-war-plugin</artifactId><version>3.2.1</version>
 				</plugin>
 				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-source-plugin</artifactId>
-					<version>3.0.1</version>
+					<groupId>org.apache.maven.plugins</groupId><artifactId>maven-source-plugin</artifactId><version>3.0.1</version>
 				</plugin>
 				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-javadoc-plugin</artifactId>
-					<version>3.0.1</version>
+					<groupId>org.apache.maven.plugins</groupId><artifactId>maven-javadoc-plugin</artifactId><version>3.0.1</version>
 				</plugin>
 				<plugin>
-					<groupId>org.apache.maven.plugins</groupId>
-					<artifactId>maven-site-plugin</artifactId>
-					<version>3.7.1</version>
+					<groupId>org.apache.maven.plugins</groupId><artifactId>maven-site-plugin</artifactId><version>3.7.1</version>
 				</plugin>
 				<!-- Plugins used by some project-specific pom.xml -->
 				<plugin>
-					<groupId>org.apache.tomcat.maven</groupId>
-					<artifactId>tomcat7-maven-plugin</artifactId>
-					<version>2.2</version>
+					<groupId>org.apache.tomcat.maven</groupId><artifactId>tomcat7-maven-plugin</artifactId><version>2.2</version>
 				</plugin>
 				<plugin>
-					<groupId>org.eclipse.jetty</groupId>
-					<artifactId>jetty-maven-plugin</artifactId>
-					<version>9.4.11.v20180605</version>
+					<groupId>org.eclipse.jetty</groupId><artifactId>jetty-maven-plugin</artifactId><version>9.4.11.v20180605</version>
 				</plugin>
 			</plugins>
 		</pluginManagement>
 		<plugins>
 			<!-- Make the components of the current version available as parsedVersion.* properties -->
 			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>build-helper-maven-plugin</artifactId>
+				<groupId>org.codehaus.mojo</groupId><artifactId>build-helper-maven-plugin</artifactId>
 				<executions>
 					<execution>
 						<id>parse-version</id>
@@ -357,8 +310,7 @@ along with aorepo-parent.  If not, see <http://www.gnu.org/licenses />.
 			</plugin>
 			<!-- Make dependency versions available as properties -->
 			<plugin>
-				<groupId>io.reformanda.semper</groupId>
-				<artifactId>dependencyversion-maven-plugin</artifactId>
+				<groupId>io.reformanda.semper</groupId><artifactId>dependencyversion-maven-plugin</artifactId>
 				<executions>
 					<execution>
 						<id>set-all</id>
@@ -369,8 +321,7 @@ along with aorepo-parent.  If not, see <http://www.gnu.org/licenses />.
 				</executions>
 			</plugin>
 			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-jar-plugin</artifactId>
+				<groupId>org.apache.maven.plugins</groupId><artifactId>maven-jar-plugin</artifactId>
 				<configuration>
 					<archive>
 						<manifest>
@@ -388,8 +339,7 @@ along with aorepo-parent.  If not, see <http://www.gnu.org/licenses />.
 				</configuration>
 			</plugin>
 			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-war-plugin</artifactId>
+				<groupId>org.apache.maven.plugins</groupId><artifactId>maven-war-plugin</artifactId>
 				<configuration>
 					<archive>
 						<manifest>
@@ -408,8 +358,7 @@ along with aorepo-parent.  If not, see <http://www.gnu.org/licenses />.
 			</plugin>
 			<!-- Supporting packaging of "bundle" for OSGI bundles -->
 			<plugin>
-				<groupId>org.apache.felix</groupId>
-				<artifactId>maven-bundle-plugin</artifactId>
+				<groupId>org.apache.felix</groupId><artifactId>maven-bundle-plugin</artifactId>
 				<extensions>true</extensions>
 				<configuration>
 					<instructions>
@@ -455,8 +404,7 @@ along with aorepo-parent.  If not, see <http://www.gnu.org/licenses />.
 			</plugin>
 			<!--
 			<plugin>
-				<groupId>org.sonatype.plugins</groupId>
-				<artifactId>nexus-staging-maven-plugin</artifactId>
+				<groupId>org.sonatype.plugins</groupId><artifactId>nexus-staging-maven-plugin</artifactId>
 				<extensions>true</extensions>
 				<configuration>
 					<serverId>ossrh</serverId>
@@ -466,8 +414,7 @@ along with aorepo-parent.  If not, see <http://www.gnu.org/licenses />.
 			</plugin>
 			-->
 			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-release-plugin</artifactId>
+				<groupId>org.apache.maven.plugins</groupId><artifactId>maven-release-plugin</artifactId>
 				<configuration>
 					<useReleaseProfile>false</useReleaseProfile>
 					<releaseProfiles>release</releaseProfiles>
@@ -475,8 +422,7 @@ along with aorepo-parent.  If not, see <http://www.gnu.org/licenses />.
 				</configuration>
 			</plugin>
 			<plugin>
-				<groupId>org.codehaus.mojo</groupId>
-				<artifactId>versions-maven-plugin</artifactId>
+				<groupId>org.codehaus.mojo</groupId><artifactId>versions-maven-plugin</artifactId>
 				<configuration>
 					<excludes>
 						<!-- Stay on Java EE Web API 6 -->
@@ -499,8 +445,7 @@ along with aorepo-parent.  If not, see <http://www.gnu.org/licenses />.
 				<pluginManagement>
 					<plugins>
 						<plugin>
-							<groupId>org.apache.maven.plugins</groupId>
-							<artifactId>maven-compiler-plugin</artifactId>
+							<groupId>org.apache.maven.plugins</groupId><artifactId>maven-compiler-plugin</artifactId>
 							<configuration>
 								<compilerArguments>
 									<bootclasspath>${compiler.bootclasspath}</bootclasspath>
@@ -508,8 +453,7 @@ along with aorepo-parent.  If not, see <http://www.gnu.org/licenses />.
 							</configuration>
 						</plugin>
 						<plugin>
-							<groupId>org.apache.maven.plugins</groupId>
-							<artifactId>maven-javadoc-plugin</artifactId>
+							<groupId>org.apache.maven.plugins</groupId><artifactId>maven-javadoc-plugin</artifactId>
 							<configuration>
 								<bootclasspath>${javac.bootclasspath}</bootclasspath>
 							</configuration>
@@ -528,8 +472,7 @@ along with aorepo-parent.  If not, see <http://www.gnu.org/licenses />.
 				<pluginManagement>
 					<plugins>
 						<plugin>
-							<groupId>org.apache.maven.plugins</groupId>
-							<artifactId>maven-javadoc-plugin</artifactId>
+							<groupId>org.apache.maven.plugins</groupId><artifactId>maven-javadoc-plugin</artifactId>
 							<configuration>
 								<additionalOptions>--allow-script-in-comments</additionalOptions>
 								<doclint>none</doclint>
@@ -546,8 +489,7 @@ along with aorepo-parent.  If not, see <http://www.gnu.org/licenses />.
 				<pluginManagement>
 					<plugins>
 						<plugin>
-							<groupId>org.apache.maven.plugins</groupId>
-							<artifactId>maven-war-plugin</artifactId>
+							<groupId>org.apache.maven.plugins</groupId><artifactId>maven-war-plugin</artifactId>
 							<executions>
 								<execution>
 									<id>default-war</id>
@@ -572,8 +514,7 @@ along with aorepo-parent.  If not, see <http://www.gnu.org/licenses />.
 				<plugins>
 					<!-- Attach sources only during release builds -->
 					<plugin>
-						<groupId>org.apache.maven.plugins</groupId>
-						<artifactId>maven-source-plugin</artifactId>
+						<groupId>org.apache.maven.plugins</groupId><artifactId>maven-source-plugin</artifactId>
 						<executions>
 							<execution>
 								<id>attach-sources</id>
@@ -600,8 +541,7 @@ along with aorepo-parent.  If not, see <http://www.gnu.org/licenses />.
 					</plugin>
 					<!-- Create javadocs only during release builds -->
 					<plugin>
-						<groupId>org.apache.maven.plugins</groupId>
-						<artifactId>maven-javadoc-plugin</artifactId>
+						<groupId>org.apache.maven.plugins</groupId><artifactId>maven-javadoc-plugin</artifactId>
 						<configuration>
 							<!-- TODO: Here and all javadocs, support canonical URL links in generated docs -->
 							<packagesheader><![CDATA[<a target="_top" href="${project.url}">${project.name} ${project.version}</a>]]></packagesheader>
@@ -686,8 +626,7 @@ along with aorepo-parent.  If not, see <http://www.gnu.org/licenses />.
 					</plugin>
 					<!-- Create build.currentYear property for filtering -->
 					<plugin>
-						<groupId>org.codehaus.mojo</groupId>
-						<artifactId>buildnumber-maven-plugin</artifactId>
+						<groupId>org.codehaus.mojo</groupId><artifactId>buildnumber-maven-plugin</artifactId>
 						<executions>
 							<execution>
 								<id>build.currentYear</id>
@@ -704,8 +643,7 @@ along with aorepo-parent.  If not, see <http://www.gnu.org/licenses />.
 					</plugin>
 					<!-- Sign all release jars -->
 					<plugin>
-						<groupId>org.apache.maven.plugins</groupId>
-						<artifactId>maven-gpg-plugin</artifactId>
+						<groupId>org.apache.maven.plugins</groupId><artifactId>maven-gpg-plugin</artifactId>
 						<executions>
 							<execution>
 								<id>sign-artifacts</id>
@@ -724,9 +662,7 @@ along with aorepo-parent.  If not, see <http://www.gnu.org/licenses />.
 	<dependencyManagement>
 		<dependencies>
 			<dependency>
-				<groupId>junit</groupId>
-				<artifactId>junit</artifactId>
-				<version>4.12</version>
+				<groupId>junit</groupId><artifactId>junit</artifactId><version>4.12</version>
 				<scope>test</scope>
 			</dependency>
 		</dependencies>
