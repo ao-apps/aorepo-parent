@@ -1,4 +1,4 @@
-# [<img src="ao-logo.png" alt="AO Logo" width="35" height="40">](https://aoindustries.com/) [AORepo](https://aorepo.org/) / [Parent](https://aorepo.org/parent/)
+# [<img src="ao-logo.png" alt="AO Logo" width="35" height="40">](https://github.com/aoindustries) [AORepo](https://github.com/aoindustries/aorepo) / [Parent](https://github.com/aoindustries/aorepo-parent)
 <p>
 	<a href="https://aoindustries.com/life-cycle#project-alpha">
 		<img src="https://aorepo.org/ao-badges/project-alpha.svg" alt="project: alpha" />
@@ -18,7 +18,7 @@
 	</a>
 </p>
 
-Parent POM for all [AORepo](https://aorepo.org/) packages.
+Parent POM for all [AORepo](https://github.com/aoindustries/aorepo) packages.
 
 ## Project Links
 * [Project Home](https://aorepo.org/parent/)
