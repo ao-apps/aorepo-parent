@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 aorepo-parent - Parent POM for all AORepo packages.
-Copyright (C) 2017  AO Industries, Inc.
+Copyright (C) 2017, 2019  AO Industries, Inc.
     support@aoindustries.com
     7262 Bull Pen Cir
     Mobile, AL 36695
@@ -36,7 +36,7 @@ along with aorepo-parent.  If not, see <http://www.gnu.org/licenses />.
 		datePublished="2017-07-23T15:20:14-0500"
 		dateModified="2017-07-28T22:47:29-0500"
 	>
-		<core:child page="changelog" />
+		<core:child page="changelog.jspx" />
 		<ao:include
 			page="/ao-badges/badges.inc.jspx"
 			arg.projectStatus="${currentPage.property.projectStatus}"
@@ -46,12 +46,12 @@ along with aorepo-parent.  If not, see <http://www.gnu.org/licenses />.
 			arg.license="${currentPage.property.license}"
 		/>
 		<p>
-			Parent POM for all <core:link book="/" page="/" /> packages.
+			Parent POM for all <core:link book="/" page="/index.jspx" /> packages.
 		</p>
 		<section:section label="Project Links">
 			<ul>
-				<li><core:link page="/">Project Home</core:link></li>
-				<li><core:link page="changelog">Changelog</core:link></li>
+				<li><core:link page="index.jspx">Project Home</core:link></li>
+				<li><core:link page="changelog.jspx">Changelog</core:link></li>
 				<li><ao:a href="https://aorepo.org/maven2/">Maven Repository</ao:a></li>
 				<li><ao:a href="@{documented.scm.url}">GitHub</ao:a></li>
 			</ul>
