@@ -400,6 +400,7 @@ along with aorepo-parent.  If not, see <http://www.gnu.org/licenses />.
 						<phase>process-resources</phase>
 						<configuration>
 							<tasks>
+								<mkdir dir="${project.build.directory}/classes"/>
 								<mkdir dir="${project.build.directory}/resources-filtered"/>
 							</tasks>
 						</configuration>
