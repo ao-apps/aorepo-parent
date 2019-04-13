@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 aorepo-parent - Parent POM for all AORepo packages.
-Copyright (C) 2017, 2018  AO Industries, Inc.
+Copyright (C) 2017, 2018, 2019  AO Industries, Inc.
     support@aoindustries.com
     7262 Bull Pen Cir
     Mobile, AL 36695
@@ -37,7 +37,7 @@ along with aorepo-parent.  If not, see <http://www.gnu.org/licenses />.
 		shortTitle="Changelog"
 		tocLevels="1"
 		datePublished="2017-07-23T15:20:14-0500"
-		dateModified="2018-06-07T18:00:11-0500"
+		dateModified="2019-04-12T23:45:23-0500"
 	>
 		<!-- The current snapshot, unreleased version -->
 		<c:set var="version" value="@{org.aorepo:aorepo-parent:pom.version}" />
@@ -60,6 +60,7 @@ along with aorepo-parent.  If not, see <http://www.gnu.org/licenses />.
 						Added support for packaging as OSGI bundles as <code>&lt;packaging&gt;bundle&lt;/packaging&gt;</code>
 						via the <ao:a href="https://felix.apache.org/components/bundle-plugin/index.html">Maven Bundle Plugin</ao:a>.
 					</li>
+					<li>Now including unfiltered form of <code>src/main/resources-filtered</code> in source artifacts.</li>
 				</ul>
 			</changelog:release>
 		</c:if>
