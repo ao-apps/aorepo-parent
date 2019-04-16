@@ -37,7 +37,7 @@ along with aorepo-parent.  If not, see <http://www.gnu.org/licenses />.
 		shortTitle="Changelog"
 		tocLevels="1"
 		datePublished="2017-07-23T15:20:14-0500"
-		dateModified="2019-04-15T08:51:45-0500"
+		dateModified="2019-04-16T02:16:27-0500"
 	>
 		<!-- The current snapshot, unreleased version -->
 		<c:set var="version" value="@{org.aorepo:aorepo-parent:pom.version}" />
@@ -57,7 +57,7 @@ along with aorepo-parent.  If not, see <http://www.gnu.org/licenses />.
 				<ul>
 					<li>Changed <ao:a href="https://aorepo.org/maven2/">AORepo Maven artifact repository</ao:a> URL to include trailing slash.</li>
 					<li>
-						Added support for packaging as OSGI bundles as <code>&lt;packaging&gt;bundle&lt;/packaging&gt;</code>
+						Added support for packaging as OSGI bundles as <code><![CDATA[&lt;packaging&gt;bundle&lt;/packaging&gt;]]></code>
 						via the <ao:a href="https://felix.apache.org/components/bundle-plugin/index.html">Maven Bundle Plugin</ao:a>.
 					</li>
 					<li>Now including unfiltered form of <code>src/main/resources-filtered</code> in source artifacts.</li>
