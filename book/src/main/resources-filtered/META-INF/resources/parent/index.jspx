@@ -34,17 +34,19 @@ along with aorepo-parent.  If not, see <http://www.gnu.org/licenses />.
 		shortTitle="@{documented.shortTitle}"
 		description="@{documented.description}"
 		datePublished="2017-07-23T15:20:14-0500"
-		dateModified="2019-04-18T00:09:08-0500"
+		dateModified="2019-06-01T00:46:53-0500"
 	>
 		<core:child page="changelog.jspx" />
-		<ao:include
-			page="/ao-badges/badges.inc.jspx"
-			arg.projectStatus="${currentPage.property.projectStatus}"
-			arg.managementStatus="${currentPage.property.managementStatus}"
-			arg.packagingStatus="${currentPage.property.packagingStatus}"
-			arg.semanticVersioning="${currentPage.property.semanticVersioning}"
-			arg.license="${currentPage.property.license}"
-		/>
+		<header>
+			<ao:include
+				page="/ao-badges/badges.inc.jspx"
+				arg.projectStatus="${currentPage.property.projectStatus}"
+				arg.managementStatus="${currentPage.property.managementStatus}"
+				arg.packagingStatus="${currentPage.property.packagingStatus}"
+				arg.semanticVersioning="${currentPage.property.semanticVersioning}"
+				arg.license="${currentPage.property.license}"
+			/>
+		</header>
 		<p>
 			Parent POM for all <core:link book="/" page="/index.jspx" /> packages.
 		</p>
