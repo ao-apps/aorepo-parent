@@ -141,8 +141,8 @@ along with aorepo-parent.  If not, see <http://www.gnu.org/licenses />.
 		</repository>
 		<!--
 		<snapshotRepository>
-            <id>ossrh-aoindustries</id>
-            <name>ossrh-aoindustries</name>
+			<id>ossrh-aoindustries</id>
+			<name>ossrh-aoindustries</name>
 			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
 		</snapshotRepository>
 		-->
