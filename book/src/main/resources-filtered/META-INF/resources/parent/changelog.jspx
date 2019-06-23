@@ -36,7 +36,7 @@ along with aorepo-parent.  If not, see <http://www.gnu.org/licenses />.
 		shortTitle="Changelog"
 		tocLevels="1"
 		datePublished="2017-07-23T15:20:14-0500"
-		dateModified="2019-06-23T11:24:05-0500"
+		dateModified="2019-06-23T12:02:41-0500"
 	>
 		<!-- The current snapshot, unreleased version -->
 		<c:set var="version" value="@{org.aorepo:aorepo-parent:pom.version}" />
@@ -88,7 +88,7 @@ along with aorepo-parent.  If not, see <http://www.gnu.org/licenses />.
 						Post-release builds happen after a release and before a new -SNAPSHOT is
 						started.  They are used to ensure that previous releases still compile
 						against newer dependencies.
-					<p>
+					</p>
 					<p>
 						Furthermore, post-release builds may contain the following changes without
 						being promoted to the next -SNAPSHOT version:
