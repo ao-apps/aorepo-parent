@@ -36,7 +36,7 @@ along with aorepo-parent.  If not, see <http://www.gnu.org/licenses />.
 		shortTitle="Changelog"
 		tocLevels="1"
 		datePublished="2017-07-23T15:20:14-0500"
-		dateModified="2019-08-11T07:04:58-0500"
+		dateModified="2019-09-24T21:09:15-0500"
 	>
 		<!-- The current snapshot, unreleased version -->
 		<c:set var="version" value="@{org.aorepo:aorepo-parent:pom.version}" />
@@ -52,7 +52,17 @@ along with aorepo-parent.  If not, see <http://www.gnu.org/licenses />.
 				artifactId="@{documented.artifactId}"
 				repository="https://aorepo.org/maven2/"
 				scmUrl="@{documented.scm.url}"
-			/>
+			>
+				<ol>
+					<li>Java updates:
+						<ol type="a">
+							<li>Java 12 is now end-of-life</li>
+							<li>Java 13 is now current stable</li>
+							<li>Java 14 is new beta</li>
+						</ol>
+					</li>
+				</ol>
+			</changelog:release>
 		</c:if>
 
 		<changelog:release
