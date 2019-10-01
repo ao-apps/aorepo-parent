@@ -36,7 +36,7 @@ along with aorepo-parent.  If not, see <http://www.gnu.org/licenses />.
 		shortTitle="Changelog"
 		tocLevels="1"
 		datePublished="2017-07-23T15:20:14-0500"
-		dateModified="2019-10-01T15:30:38-0500"
+		dateModified="2019-10-01T17:40:30-0500"
 	>
 		<!-- The current snapshot, unreleased version -->
 		<c:set var="version" value="@{org.aorepo:aorepo-parent:pom.version}" />
@@ -52,19 +52,29 @@ along with aorepo-parent.  If not, see <http://www.gnu.org/licenses />.
 				artifactId="@{documented.artifactId}"
 				repository="https://aorepo.org/maven2/"
 				scmUrl="@{documented.scm.url}"
-			>
-				<ol>
-					<li>Java updates:
-						<ol type="a">
-							<li>Java 12 is now end-of-life</li>
-							<li>Java 13 is now current stable</li>
-							<li>Java 14 is new beta</li>
-						</ol>
-					</li>
-					<li>Updated plugin versions.</li>
-				</ol>
-			</changelog:release>
+			/>
 		</c:if>
+
+		<changelog:release
+			projectName="@{documented.name}"
+			version="1.5.0"
+			datePublished="2019-10-01T17:40:30-0500"
+			groupId="@{documented.groupId}"
+			artifactId="@{documented.artifactId}"
+			repository="https://aorepo.org/maven2/"
+			scmUrl="@{documented.scm.url}"
+		>
+			<ul>
+				<li>Java updates:
+					<ol>
+						<li>Java 12 is now end-of-life</li>
+						<li>Java 13 is now current stable</li>
+						<li>Java 14 is new beta</li>
+					</ol>
+				</li>
+				<li>Updated plugin versions.</li>
+			</ul>
+		</changelog:release>
 
 		<changelog:release
 			projectName="@{documented.name}"
