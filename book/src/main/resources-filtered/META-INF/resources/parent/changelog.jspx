@@ -36,7 +36,7 @@ along with aorepo-parent.  If not, see <http://www.gnu.org/licenses />.
 		shortTitle="Changelog"
 		tocLevels="1"
 		datePublished="2017-07-23T15:20:14-0500"
-		dateModified="2020-02-18T23:52:26-0600"
+		dateModified="2020-02-23T19:28:37-0600"
 	>
 		<!-- The current snapshot, unreleased version -->
 		<c:set var="version" value="@{org.aorepo:aorepo-parent:pom.version}" />
@@ -55,6 +55,10 @@ along with aorepo-parent.  If not, see <http://www.gnu.org/licenses />.
 			>
 				<ul>
 					<li>Now setting build properties <code>maven.compiler.source</code> and <code>maven.compiler.target</code>.</li>
+					<li>
+						Now setting build property <code>javac.link.javamailApi</code> in parent POM
+						instead of on a per-project basis.
+					</li>
 				</ul>
 			</changelog:release>
 		</c:if>
