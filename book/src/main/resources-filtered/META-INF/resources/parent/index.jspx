@@ -56,7 +56,7 @@ along with aorepo-parent.  If not, see <http://www.gnu.org/licenses />.
 				<li><core:link page="index.jspx">Project Home</core:link></li>
 				<li><core:link page="changelog.jspx">Changelog</core:link></li>
 				<li><ao:a href="https://aorepo.org/maven2/">Maven Repository</ao:a></li>
-				<li><ao:a href="@{documented.scm.url}">GitHub</ao:a></li>
+				<li><ao:a href="@{project.scm.url}">GitHub</ao:a></li>
 			</ul>
 		</section:nav>
 	</core:page>
