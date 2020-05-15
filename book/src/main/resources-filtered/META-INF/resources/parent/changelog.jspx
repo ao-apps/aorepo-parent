@@ -37,7 +37,7 @@ along with aorepo-parent.  If not, see <http://www.gnu.org/licenses />.
 		shortTitle="Changelog"
 		tocLevels="1"
 		datePublished="2017-07-23T15:20:14-0500"
-		dateModified="2020-05-15T10:23:42-05:00"
+		dateModified="2020-05-15T14:25:06-05:00"
 	>
 		<!-- The current snapshot, unreleased version -->
 		<c:set var="version" value="@{org.aorepo:aorepo-parent:pom.version}" />
@@ -56,10 +56,8 @@ along with aorepo-parent.  If not, see <http://www.gnu.org/licenses />.
 			>
 				<ul>
 					<li>
-						Enabled <ao:a href="https://axis.apache.org/axis2/java/core/tools/maven-plugins/axis2-aar-maven-plugin/howto.html">axis2-aar-maven-plugin</ao:a> by default
-						for building web services.
+						Added <ao:a href="https://axis.apache.org/axis2/java/core/tools/maven-plugins/axis2-aar-maven-plugin/howto.html">axis2-aar-maven-plugin</ao:a> for building web services.
 						<ol>
-							<li>Enabled as extension so projects may use <code><![CDATA[&lt;packaging&gt;aar&lt;/packaging&gt;]]></code>.</li>
 							<li>Configured manifest entries consistent with other plugins.</li>
 						</ol>
 					</li>
