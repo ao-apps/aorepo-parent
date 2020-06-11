@@ -37,7 +37,7 @@ along with aorepo-parent.  If not, see <http://www.gnu.org/licenses />.
 		shortTitle="Changelog"
 		tocLevels="1"
 		datePublished="2017-07-23T15:20:14-0500"
-		dateModified="2020-06-11T01:44:45-05:00"
+		dateModified="2020-06-11T04:41:07-05:00"
 	>
 		<!-- The current snapshot, unreleased version -->
 		<c:set var="version" value="@{org.aorepo:aorepo-parent:pom.version}" />
@@ -105,7 +105,7 @@ along with aorepo-parent.  If not, see <http://www.gnu.org/licenses />.
 					Moved configuration into <code><![CDATA[&lt;pluginManagement /&gt;]]></code> where appropriate.
 					<p>
 						One notable consequence is that Javadocs are now fully formatted without
-						requring the <code>release</code> profile.
+						requiring the <code>release</code> profile.
 					</p>
 				</li>
 				<li>Restored <code>Built-By</code> manifest entry on <code>bundle</code> and <code>war</code> packaging.</li>
