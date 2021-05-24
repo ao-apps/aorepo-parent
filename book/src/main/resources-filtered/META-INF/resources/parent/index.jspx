@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 aorepo-parent - Parent POM for all AORepo packages.
-Copyright (C) 2017, 2019, 2020  AO Industries, Inc.
+Copyright (C) 2017, 2019, 2020, 2021  AO Industries, Inc.
     support@aoindustries.com
     7262 Bull Pen Cir
     Mobile, AL 36695
@@ -34,8 +34,8 @@ along with aorepo-parent.  If not, see <http://www.gnu.org/licenses />.
 		title="@{documented.name}"
 		shortTitle="@{documented.shortTitle}"
 		description="@{documented.description}"
-		datePublished="2017-07-23T15:20:14-0500"
-		dateModified="2019-06-01T18:51:51-0500"
+		datePublished="2017-07-23T15:20:14-05:00"
+		dateModified="2019-06-01T18:51:51-05:00"
 	>
 		<core:child page="changelog.jspx" />
 		<header>
