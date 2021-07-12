@@ -6,6 +6,8 @@
 [![semantic versioning: 2.0.0](https://aorepo.org/ao-badges/semver-2.0.0.svg)](http://semver.org/spec/v2.0.0.html)
 [![license: LGPL v3](https://aorepo.org/ao-badges/license-lgpl-3.0.svg)](https://www.gnu.org/licenses/lgpl-3.0)
 
+[![Build](https://github.com/aoindustries/aorepo-parent/workflows/Build/badge.svg?branch=master)](https://github.com/aoindustries/aorepo-parent/actions?query=workflow%3ABuild)
+
 Parent POM for all [AORepo](https://github.com/aoindustries/aorepo) packages.
 
 ## Project Links
