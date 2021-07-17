@@ -102,7 +102,7 @@ along with aorepo-parent.  If not, see <http://www.gnu.org/licenses />.
 		<POST-SNAPSHOT><!-- -POST-SNAPSHOT --></POST-SNAPSHOT>
 		<!-- org.aorepo is not on any Sonatype Nexus Repository Manager -->
 		<nexusUrl />
-		<!-- SonarCloud.io -->
+		<!-- SonarQube -->
 		<sonar.projectKey>${project.groupId}:${project.artifactId}</sonar.projectKey>
 		<sonar.organization>aoindustries</sonar.organization>
 		<sonar.host.url>https://sonarcloud.io</sonar.host.url>
