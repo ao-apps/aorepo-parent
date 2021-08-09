@@ -646,7 +646,7 @@ along with aorepo-parent.  If not, see <http://www.gnu.org/licenses />.
 					</dependencies>
 				</plugin>
 				<plugin>
-					<groupId>org.apache.axis2</groupId><artifactId>axis2-aar-maven-plugin</artifactId><version>1.7.9</version>
+					<groupId>org.apache.axis2</groupId><artifactId>axis2-aar-maven-plugin</artifactId><version>1.8.0</version>
 					<configuration>
 						<archive>
 							<manifest>
