@@ -627,6 +627,7 @@ along with aorepo-parent.  If not, see <http://www.gnu.org/licenses />.
 						<verifyAtypical>true</verifyAtypical>
 						<verifyPluginDependencies>true</verifyPluginDependencies>
 						<verifyPlugins>true</verifyPlugins>
+						<verifyProvidedDependencies>true</verifyProvidedDependencies>
 						<verifyReactorDependencies>true</verifyReactorDependencies>
 						<verifySnapshots>true</verifySnapshots>
 						<keysMapLocations>
