@@ -37,7 +37,7 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
 		shortTitle="Changelog"
 		tocLevels="1"
 		datePublished="2017-07-23T15:20:14-05:00"
-		dateModified="2021-10-20T19:12:40-05:00"
+		dateModified="2021-11-07T07:28:10-06:00"
 	>
 		<c:if test="${fn:endsWith('@{project.version}', '-SNAPSHOT') and !fn:endsWith('@{project.version}', '-POST-SNAPSHOT')}">
 			<changelog:release
@@ -50,6 +50,7 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
 			>
 				<ul>
 					<li>Updated to latest release of <ao:a href="https://github.com/s4u/pgp-keys-map">PGP keys map to maven artifacts</ao:a>.</li>
+					<li>Repository URLs now defined in Maven properties to support continuous integration.</li>
 				</ul>
 			</changelog:release>
 		</c:if>

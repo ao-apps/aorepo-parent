@@ -24,10 +24,14 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>org.aorepo</groupId><artifactId>aorepo-parent</artifactId><version>1.17.3-POST-SNAPSHOT</version>
+	<groupId>org.aorepo</groupId><artifactId>aorepo-parent</artifactId><version>1.17.4-SNAPSHOT</version>
 	<packaging>pom</packaging>
 
 	<properties>
+		<!-- Default Repository URLs -->
+		<aorepo-repository.url>https://aorepo.org/maven2/</aorepo-repository.url>
+		<aorepo-distribution.url>scpexe://aorepo.org/var/www/aorepo.org/webapps/maven2</aorepo-distribution.url>
+
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
 		<!-- The version of Java apidocs to link to, preferring https -->
@@ -501,7 +505,7 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
 	<pluginRepositories>
 		<pluginRepository>
 			<id>aorepo-repository</id>
-			<url>https://aorepo.org/maven2/</url>
+			<url>${aorepo-repository.url}</url>
 			<releases>
 				<enabled>true</enabled>
 				<updatePolicy>never</updatePolicy>
@@ -538,7 +542,7 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
 	<repositories>
 		<repository>
 			<id>aorepo-repository</id>
-			<url>https://aorepo.org/maven2/</url>
+			<url>${aorepo-repository.url}</url>
 			<releases>
 				<enabled>true</enabled>
 				<updatePolicy>never</updatePolicy>
@@ -574,8 +578,8 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
 
 	<distributionManagement>
 		<repository>
-			<id>aorepo-repository</id>
-			<url>scpexe://aorepo.org/var/www/aorepo.org/webapps/maven2</url>
+			<id>aorepo-distribution</id>
+			<url>${aorepo-distribution.url}</url>
 		</repository>
 		<!--
 		<snapshotRepository>
