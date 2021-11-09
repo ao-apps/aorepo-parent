@@ -29,7 +29,6 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
 
 	<properties>
 		<!-- Default Repository URLs -->
-		<aorepo-repository.url>https://aorepo.org/maven2/</aorepo-repository.url>
 		<aorepo-distribution.url>scpexe://aorepo.org/var/www/aorepo.org/webapps/maven2</aorepo-distribution.url>
 
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -504,27 +503,12 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
 
 	<pluginRepositories>
 		<pluginRepository>
-			<id>aorepo-repository</id>
-			<url>${aorepo-repository.url}</url>
-			<releases>
-				<enabled>true</enabled>
-				<updatePolicy>never</updatePolicy>
-			</releases>
-			<snapshots>
-				<enabled>true</enabled>
-				<updatePolicy>daily</updatePolicy>
-			</snapshots>
-		</pluginRepository>
-		<pluginRepository>
 			<id>sonatype-nexus-snapshots</id>
 			<name>Sonatype Nexus Snapshots</name>
 			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
 			<releases>
 				<enabled>false</enabled>
 			</releases>
-			<snapshots>
-				<enabled>true</enabled>
-			</snapshots>
 		</pluginRepository>
 		<pluginRepository>
 			<id>sonatype-nexus-snapshots-s01</id>
@@ -533,35 +517,17 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
 			<releases>
 				<enabled>false</enabled>
 			</releases>
-			<snapshots>
-				<enabled>true</enabled>
-			</snapshots>
 		</pluginRepository>
 	</pluginRepositories>
 
 	<repositories>
 		<repository>
-			<id>aorepo-repository</id>
-			<url>${aorepo-repository.url}</url>
-			<releases>
-				<enabled>true</enabled>
-				<updatePolicy>never</updatePolicy>
-			</releases>
-			<snapshots>
-				<enabled>true</enabled>
-				<updatePolicy>daily</updatePolicy>
-			</snapshots>
-		</repository>
-		<repository>
 			<id>sonatype-nexus-snapshots</id>
 			<name>Sonatype Nexus Snapshots</name>
 			<url>https://oss.sonatype.org/content/repositories/snapshots</url>
 			<releases>
 				<enabled>false</enabled>
 			</releases>
-			<snapshots>
-				<enabled>true</enabled>
-			</snapshots>
 		</repository>
 		<repository>
 			<id>sonatype-nexus-snapshots-s01</id>
@@ -570,9 +536,6 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
 			<releases>
 				<enabled>false</enabled>
 			</releases>
-			<snapshots>
-				<enabled>true</enabled>
-			</snapshots>
 		</repository>
 	</repositories>
 
