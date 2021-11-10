@@ -107,6 +107,7 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
 		<POST-SNAPSHOT><!-- -POST-SNAPSHOT --></POST-SNAPSHOT>
 		<!-- org.aorepo is not on any Sonatype Nexus Repository Manager -->
 		<nexusUrl />
+		<nexus.skipNexusStagingDeployMojo>false</nexus.skipNexusStagingDeployMojo>
 		<!-- SonarQube -->
 		<sonar.projectKey>${project.groupId}:${project.artifactId}</sonar.projectKey>
 		<sonar.organization>ao-apps</sonar.organization>
@@ -784,24 +785,6 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
 					<!-- See https://sonatype.github.io/ossindex-maven/maven-plugin/ -->
 					<groupId>org.sonatype.ossindex.maven</groupId><artifactId>ossindex-maven-plugin</artifactId><version>3.1.0</version>
 				</plugin>
-				<!--
-				<plugin>
-					<groupId>org.sonatype.plugins</groupId><artifactId>nexus-staging-maven-plugin</artifactId><version>1.6.8</version>
-					<configuration>
-						<serverId>ossrh-aoindustries</serverId>
-						<nexusUrl>${nexusUrl}</nexusUrl>
-						<autoReleaseAfterClose>true</autoReleaseAfterClose>
-						<!- -
-							Use direct deployment instead of deferred for two reasons:
-							1) Total deploy time is significantly reduced because artifact uploads happen in parallel
-							   during the builds.  With deferred deployment, the artifact uploads are sequential.
-							2) When the reactor happens to end on a project with skipNexusStagingDeployMojo=true, the
-							   staging will not occur.
-						- ->
-						<skipLocalStaging>true</skipLocalStaging>
-					</configuration>
-				</plugin>
-				-->
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId><artifactId>maven-release-plugin</artifactId><version>3.0.0-M4</version>
 					<configuration>
@@ -1270,12 +1253,6 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
 				-->
 				<groupId>org.apache.maven.plugins</groupId><artifactId>maven-deploy-plugin</artifactId>
 			</plugin>
-			<!--
-			<plugin>
-				<groupId>org.sonatype.plugins</groupId><artifactId>nexus-staging-maven-plugin</artifactId>
-				<extensions>true</extensions>
-			</plugin>
-			-->
 		</plugins>
 	</build>
 
@@ -1664,6 +1641,39 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
 			</build>
 		</profile>
 		<profile>
+			<id>nexus</id>
+			<!--
+			<build>
+				<pluginManagement>
+					<plugins>
+						<plugin>
+							<groupId>org.sonatype.plugins</groupId><artifactId>nexus-staging-maven-plugin</artifactId><version>1.6.8</version>
+							<configuration>
+								<serverId>ossrh-aoindustries</serverId>
+								<nexusUrl>${nexusUrl}</nexusUrl>
+								<autoReleaseAfterClose>true</autoReleaseAfterClose>
+								<!- -
+									Use direct deployment instead of deferred for two reasons:
+									1) Total deploy time is significantly reduced because artifact uploads happen in parallel
+									   during the builds.  With deferred deployment, the artifact uploads are sequential.
+									2) When the reactor happens to end on a project with skipNexusStagingDeployMojo=true, the
+									   staging will not occur.
+								- ->
+								<skipLocalStaging>true</skipLocalStaging>
+							</configuration>
+						</plugin>
+					</plugins>
+				</pluginManagement>
+				<plugins>
+					<plugin>
+						<groupId>org.sonatype.plugins</groupId><artifactId>nexus-staging-maven-plugin</artifactId>
+						<extensions>true</extensions>
+					</plugin>
+				</plugins>
+			</build>
+			-->
+		</profile>
+		<profile>
 			<!--
 				Local repository install may be skipped by the presence of a file.
 				This is primarily used for projects that are executed directly in NetBeans only.
@@ -1703,18 +1713,9 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
 				This is primary used for devel/ projects and for projects that are executed directly in NetBeans only.
 			-->
 			<id>skipNexusStagingDeployMojo</id><activation><file><exists>profile.d/skipNexusStagingDeployMojo</exists></file></activation>
-			<!--
-			<build>
-				<plugins>
-					<plugin>
-						<groupId>org.sonatype.plugins</groupId><artifactId>nexus-staging-maven-plugin</artifactId>
-						<configuration>
-							<skipNexusStagingDeployMojo>true</skipNexusStagingDeployMojo>
-						</configuration>
-					</plugin>
-				</plugins>
-			</build>
-			-->
+			<properties>
+				<nexus.skipNexusStagingDeployMojo>true</nexus.skipNexusStagingDeployMojo>
+			</properties>
 		</profile>
 		<profile>
 			<id>versions-rules</id><activation><file><exists>versions-rules.xml</exists></file></activation>
@@ -1757,6 +1758,10 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
 		</profile>
 		<profile>
 			<id>development</id>
+			<properties>
+				<!-- Never stage development builds -->
+				<nexus.skipNexusStagingDeployMojo>true</nexus.skipNexusStagingDeployMojo>
+			</properties>
 			<build>
 				<plugins>
 					<plugin>
@@ -1846,15 +1851,6 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
 							<skip>true</skip>
 						</configuration>
 					</plugin>
-					<!-- Never stage development builds -->
-					<!--
-					<plugin>
-						<groupId>org.sonatype.plugins</groupId><artifactId>nexus-staging-maven-plugin</artifactId>
-						<configuration>
-							<skipNexusStagingDeployMojo>true</skipNexusStagingDeployMojo>
-						</configuration>
-					</plugin>
-					-->
 				</plugins>
 			</build>
 		</profile>
