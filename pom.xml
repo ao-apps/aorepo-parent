@@ -28,9 +28,6 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
 	<packaging>pom</packaging>
 
 	<properties>
-		<!-- Default Repository URLs -->
-		<aorepo-distribution.url>scpexe://aorepo.org/var/www/aorepo.org/webapps/maven2</aorepo-distribution.url>
-
 		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
 		<!-- The version of Java apidocs to link to, preferring https -->
@@ -585,7 +582,7 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
 	<distributionManagement>
 		<repository>
 			<id>aorepo-distribution</id>
-			<url>${aorepo-distribution.url}</url>
+			<url>scpexe://aorepo.org/var/www/aorepo.org/webapps/maven2</url>
 		</repository>
 		<!--
 		<snapshotRepository>
