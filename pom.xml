@@ -584,20 +584,6 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
 			<id>aorepo-distribution</id>
 			<url>scpexe://aorepo.org/var/www/aorepo.org/webapps/maven2</url>
 		</repository>
-		<!--
-		<snapshotRepository>
-			<id>ossrh-aoindustries</id>
-			<name>ossrh-aoindustries</name>
-			<url>${nexusUrl}content/repositories/snapshots</url>
-		</snapshotRepository>
-		-->
-		<!-- Unused for Nexus plugin
-		<repository>
-			<id>ossrh-aoindustries</id>
-			<name>ossrh-aoindustries</name>
-			<url>${nexusUrl}service/local/staging/deploy/maven2/</url>
-		</repository>
-		-->
 	</distributionManagement>
 
 	<build>
