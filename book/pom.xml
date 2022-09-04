@@ -28,7 +28,7 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
     <groupId>org.aorepo</groupId><artifactId>aorepo-parent</artifactId><version>1.19.7<!-- -POST-SNAPSHOT --></version>
   </parent>
 
-  <groupId>org.aorepo</groupId><artifactId>aorepo-parent-book</artifactId><version>1.19.7-SNAPSHOT</version>
+  <groupId>org.aorepo</groupId><artifactId>aorepo-parent-book</artifactId><version>1.19.7</version>
   <packaging>bundle</packaging>
 
   <properties>
@@ -73,7 +73,7 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
     <connection>scm:git:git://github.com/ao-apps/aorepo-parent.git</connection>
     <developerConnection>scm:git:git@github.com:ao-apps/aorepo-parent.git</developerConnection>
     <url>https://github.com/ao-apps/aorepo-parent</url>
-    <tag>HEAD</tag>
+    <tag>aorepo-parent-book-1.19.7</tag>
   </scm>
 
   <issueManagement>
