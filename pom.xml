@@ -24,7 +24,7 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>org.aorepo</groupId><artifactId>aorepo-parent</artifactId><version>1.19.9</version>
+  <groupId>org.aorepo</groupId><artifactId>aorepo-parent</artifactId><version>1.19.9-POST-SNAPSHOT</version>
   <packaging>pom</packaging>
 
   <properties>
@@ -508,7 +508,7 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
     <connection>scm:git:git://github.com/ao-apps/aorepo-parent.git</connection>
     <developerConnection>scm:git:git@github.com:ao-apps/aorepo-parent.git</developerConnection>
     <url>https://github.com/ao-apps/aorepo-parent</url>
-    <tag>aorepo-parent-1.19.9</tag>
+    <tag>HEAD</tag>
   </scm>
 
   <issueManagement>
