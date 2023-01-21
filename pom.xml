@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 aorepo-parent - Parent POM for all AORepo packages.
-Copyright (C) 2017, 2018, 2019, 2020, 2021, 2022  AO Industries, Inc.
+Copyright (C) 2017, 2018, 2019, 2020, 2021, 2022, 2023  AO Industries, Inc.
     support@aoindustries.com
     7262 Bull Pen Cir
     Mobile, AL 36695
@@ -611,7 +611,7 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
     <extensions>
       <!-- Enabling the use of SSH for repository access -->
       <extension>
-        <groupId>org.apache.maven.wagon</groupId><artifactId>wagon-ssh-external</artifactId><version>3.5.2</version>
+        <groupId>org.apache.maven.wagon</groupId><artifactId>wagon-ssh-external</artifactId><version>3.5.3</version>
       </extension>
     </extensions>
     <resources>
