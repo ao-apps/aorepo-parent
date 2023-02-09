@@ -25,14 +25,14 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
   <modelVersion>4.0.0</modelVersion>
 
   <parent>
-    <groupId>org.aorepo</groupId><artifactId>aorepo-parent</artifactId><version>1.20.2-POST-SNAPSHOT</version>
+    <groupId>org.aorepo</groupId><artifactId>aorepo-parent</artifactId><version>1.21.0-SNAPSHOT</version>
   </parent>
 
-  <groupId>org.aorepo</groupId><artifactId>aorepo-parent-book</artifactId><version>1.20.2-POST-SNAPSHOT</version>
+  <groupId>org.aorepo</groupId><artifactId>aorepo-parent-book</artifactId><version>1.21.0-SNAPSHOT</version>
   <packaging>bundle</packaging>
 
   <properties>
-    <project.build.outputTimestamp>2023-02-08T21:06:04Z</project.build.outputTimestamp>
+    <project.build.outputTimestamp>2023-02-09T19:12:10Z</project.build.outputTimestamp>
     <module.name>org.aorepo.parent.book</module.name>
     <!-- These values are copied from the project being documented -->
     <documented.artifactId>aorepo-parent</documented.artifactId>
