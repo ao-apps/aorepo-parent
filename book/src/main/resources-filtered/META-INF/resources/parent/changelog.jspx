@@ -37,7 +37,7 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
     shortTitle="Changelog"
     tocLevels="1"
     datePublished="2017-07-23T15:20:14-05:00"
-    dateModified="2023-08-15T20:36:42Z"
+    dateModified="2023-08-16T21:22:51Z"
   >
     <c:if test="${fn:endsWith('@{project.version}', '-SNAPSHOT') and !fn:endsWith('@{project.version}', '-POST-SNAPSHOT')}">
       <changelog:release
@@ -47,7 +47,15 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
         artifactId="@{documented.artifactId}"
         repository="https://aorepo.org/maven2/"
         scmUrl="@{project.scm.url}"
-      />
+      >
+        <ul>
+          <li>
+            Reproducible build <code>\${project.build.outputTimestamp}</code> is now based off <code>\${git.commit.time}</code>
+            via <ao:a href="https://github.com/git-commit-id/git-commit-id-maven-plugin">git-commit-id-maven-plugin</ao:a>.
+          </li>
+          <li>Builds now require Java 11 or newer.</li>
+        </ul>
+      </changelog:release>
     </c:if>
 
     <changelog:release
