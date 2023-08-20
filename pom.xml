@@ -24,11 +24,11 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
   <modelVersion>4.0.0</modelVersion>
 
-  <groupId>org.aorepo</groupId><artifactId>aorepo-parent</artifactId><version>1.23.0-SNAPSHOT</version>
+  <groupId>org.aorepo</groupId><artifactId>aorepo-parent</artifactId><version>1.23.0</version>
   <packaging>pom</packaging>
 
   <properties>
-    <project.build.outputTimestamp>${git.commit.time}</project.build.outputTimestamp>
+    <project.build.outputTimestamp>2023-08-20T01:24:33Z</project.build.outputTimestamp>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
 
     <!--
@@ -121,8 +121,7 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
     <!-- Google Analytics tracking code for the javadocs -->
     <google.analytics.trackingId>UA-86871646-3</google.analytics.trackingId>
     <!--
-      The Java module name, defaulting to the value previously used for "Bundle-SymbolicName" in Java < 9. All projects
-      should set this to match the module name defined in "module-info.java". Furthermore, projects without
+      The Java module name, defaulting to the value previously used for "Bundle-SymbolicName" in Java < 9. All projects should set this to match the module name defined in "module-info.java". Furthermore, projects without
       "module-info.java" should also add the "Automatic-Module-Name" manifest entry.
     -->
     <module.name>${project.groupId}.${project.artifactId}</module.name>
@@ -923,7 +922,7 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
     <connection>scm:git:git://github.com/ao-apps/aorepo-parent.git</connection>
     <developerConnection>scm:git:git@github.com:ao-apps/aorepo-parent.git</developerConnection>
     <url>https://github.com/ao-apps/aorepo-parent</url>
-    <tag>HEAD</tag>
+    <tag>aorepo-parent-1.23.0</tag>
   </scm>
 
   <issueManagement>
