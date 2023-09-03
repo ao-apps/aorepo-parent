@@ -2985,6 +2985,15 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
               <skip>true</skip>
             </configuration>
           </plugin>
+          <!-- MANIFEST.MF already created during "Build" phase -->
+          <plugin>
+            <groupId>org.apache.felix</groupId><artifactId>maven-bundle-plugin</artifactId>
+            <executions>
+              <execution>
+                <id>bundle-manifest</id><phase>none</phase>
+              </execution>
+            </executions>
+          </plugin>
           <!-- Already tested during "Test" phase -->
           <plugin>
             <groupId>org.apache.maven.plugins</groupId><artifactId>maven-surefire-plugin</artifactId>
