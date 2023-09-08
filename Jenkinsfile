@@ -77,6 +77,7 @@ def upstreamProjects = [
   // No Jenkins: <groupId>com.github.spotbugs</groupId><artifactId>spotbugs</artifactId>
   '../oss/javadoc-offline', // <groupId>com.aoapps</groupId><artifactId>ao-javadoc-offline</artifactId>
   '../oss/javadoc-resources', // <groupId>com.aoapps</groupId><artifactId>ao-javadoc-resources</artifactId>
+  '../oss/ant-tasks', // <groupId>com.aoapps</groupId><artifactId>ao-ant-tasks</artifactId>
   '../oss/checkstyle-config', // <groupId>com.aoapps</groupId><artifactId>ao-checkstyle-config</artifactId>
 ]
 
