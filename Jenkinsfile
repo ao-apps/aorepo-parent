@@ -78,6 +78,10 @@ def upstreamProjects = [
   '../oss/javadoc-offline', // <groupId>com.aoapps</groupId><artifactId>ao-javadoc-offline</artifactId>
   '../oss/javadoc-resources', // <groupId>com.aoapps</groupId><artifactId>ao-javadoc-resources</artifactId>
   '../oss/ant-tasks', // <groupId>com.aoapps</groupId><artifactId>ao-ant-tasks</artifactId>
+  // No Jenkins: <groupId>org.apache.commons</groupId><artifactId>commons-compress</artifactId>
+  // No Jenkins: <groupId>commons-io</groupId><artifactId>commons-io</artifactId>
+  // No Jenkins: <groupId>org.apache.commons</groupId><artifactId>commons-lang3</artifactId>
+  // No Jenkins: <groupId>org.apache.commons</groupId><artifactId>commons-text</artifactId>
   '../oss/checkstyle-config', // <groupId>com.aoapps</groupId><artifactId>ao-checkstyle-config</artifactId>
 ]
 
