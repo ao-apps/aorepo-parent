@@ -1238,6 +1238,10 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
         <plugin>
           <groupId>org.apache.maven.plugins</groupId><artifactId>maven-dependency-plugin</artifactId><version>${org.apache.maven.plugins.maven-dependency-plugin.version}</version>
           <configuration>
+            <ignoreNonCompile>true</ignoreNonCompile>
+            <ignoredUnusedDeclaredDependencies>
+              <dependency>*:*:pom:*</dependency>
+            </ignoredUnusedDeclaredDependencies>
             <silent>true</silent>
           </configuration>
         </plugin>
@@ -2102,12 +2106,11 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
       </build>
     </profile>
     <!-- Obtain AO Ant Tasks from the com.aoapps:ao-ant-tasks artifact unless we are building com.aoapps:ao-ant-tasks to avoid cyclic dependency -->
-    <!-- com.aoapps:ao-ant-tasks does not have this as a parent:
     <profile>
-      <id>ao-ant-tasks</id>
+      <id>ao-ant-tasks.maven-antrun-plugin.dependency</id>
       <activation>
         <property><name>packaging</name><value>!pom</value></property>
-        <file><missing>src/main/resources/com/aoapps/ant/tasks/antlib.xml</missing></file>
+        <file><missing>profile.d/ao-ant-tasks.maven-antrun-plugin.dependency.skip</missing></file>
       </activation>
       <build>
         <pluginManagement>
@@ -2124,7 +2127,6 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
         </pluginManagement>
       </build>
     </profile>
-    -->
     <!-- Allow changing build directory by property: https://stackoverflow.com/a/12598554/7121505 -->
     <profile>
       <id>alternateBuildDir</id>
@@ -2308,8 +2310,11 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
       </build>
     </profile>
     <profile>
-      <id>packaging-not-pom</id>
-      <activation><property><name>packaging</name><value>!pom</value></property></activation>
+      <id>ao-ant-tasks</id>
+      <activation>
+        <property><name>packaging</name><value>!pom</value></property>
+        <file><missing>profile.d/ao-ant-tasks.skip</missing></file>
+      </activation>
       <build>
         <pluginManagement>
           <plugins>
@@ -2317,9 +2322,7 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
             <plugin>
               <groupId>org.apache.maven.plugins</groupId><artifactId>maven-antrun-plugin</artifactId>
               <dependencies>
-                <dependency>
-                  <groupId>com.aoapps</groupId><artifactId>ao-ant-tasks</artifactId><version>${com.aoapps.ao-ant-tasks.version}</version>
-                </dependency>
+                <!-- Dependencies of ao-ant-tasks, whether used directly or via dependency -->
                 <dependency>
                   <groupId>org.apache.commons</groupId><artifactId>commons-compress</artifactId><version>${org.apache.commons.commons-compress.version}</version>
                 </dependency>
