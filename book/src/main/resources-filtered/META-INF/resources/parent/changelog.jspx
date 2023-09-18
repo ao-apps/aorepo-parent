@@ -75,6 +75,7 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
       artifactId="@{documented.artifactId}"
       repository="https://aorepo.org/maven2/"
       scmUrl="@{project.scm.url}"
+      newsAllowRobots="true"
     >
       <ul>
         <li>
@@ -189,6 +190,7 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
       artifactId="@{documented.artifactId}"
       repository="https://aorepo.org/maven2/"
       scmUrl="@{project.scm.url}"
+      newsAllowRobots="true"
     >
       <ul>
         <li>
@@ -232,6 +234,7 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
       artifactId="@{documented.artifactId}"
       repository="https://aorepo.org/maven2/"
       scmUrl="@{project.scm.url}"
+      newsAllowRobots="true"
     >
       <ul>
         <li>Updated plugin versions.</li>
@@ -257,6 +260,7 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
       artifactId="@{documented.artifactId}"
       repository="https://aorepo.org/maven2/"
       scmUrl="@{project.scm.url}"
+      newsAllowRobots="true"
     >
       <ul>
         <li>Updated default project settings for <ao:a href="https://github.com/apache/netbeans/releases/tag/17">NetBeans 17</ao:a>.</li>
@@ -273,6 +277,7 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
       artifactId="@{documented.artifactId}"
       repository="https://aorepo.org/maven2/"
       scmUrl="@{project.scm.url}"
+      newsAllowRobots="true"
     >
       <ul>
         <li>Updated plugin versions.</li>
@@ -294,6 +299,7 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
       artifactId="@{documented.artifactId}"
       repository="https://aorepo.org/maven2/"
       scmUrl="@{project.scm.url}"
+      newsAllowRobots="true"
     >
       <ul>
         <li>Enabled <ao:a href="https://maven.apache.org/guides/mini/guide-reproducible-builds.html">Reproducible Builds</ao:a>:
@@ -331,6 +337,7 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
       artifactId="@{documented.artifactId}"
       repository="https://aorepo.org/maven2/"
       scmUrl="@{project.scm.url}"
+      newsAllowRobots="true"
     >
       <ul>
         <li>Updated plugin versions.</li>
@@ -346,6 +353,7 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
       artifactId="@{documented.artifactId}"
       repository="https://aorepo.org/maven2/"
       scmUrl="@{project.scm.url}"
+      newsAllowRobots="true"
     >
       <ul>
         <li>Updated to latest release of <ao:a href="https://github.com/s4u/pgp-keys-map">PGP keys map to maven artifacts</ao:a>.</li>
@@ -360,6 +368,7 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
       artifactId="@{documented.artifactId}"
       repository="https://aorepo.org/maven2/"
       scmUrl="@{project.scm.url}"
+      newsAllowRobots="true"
     >
       <ul>
         <li>Jakarta EE updates:
@@ -378,6 +387,7 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
       artifactId="@{documented.artifactId}"
       repository="https://aorepo.org/maven2/"
       scmUrl="@{project.scm.url}"
+      newsAllowRobots="true"
     >
       <ul>
         <li>Java updates:
@@ -398,6 +408,7 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
       artifactId="@{documented.artifactId}"
       repository="https://aorepo.org/maven2/"
       scmUrl="@{project.scm.url}"
+      newsAllowRobots="true"
     >
       <ul>
         <li>Updated plugin versions.</li>
@@ -413,6 +424,7 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
       artifactId="@{documented.artifactId}"
       repository="https://aorepo.org/maven2/"
       scmUrl="@{project.scm.url}"
+      newsAllowRobots="true"
     >
       <ul>
         <li>Updated to latest release of <ao:a href="https://github.com/s4u/pgp-keys-map">PGP keys map to maven artifacts</ao:a>.</li>
@@ -427,6 +439,7 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
       artifactId="@{documented.artifactId}"
       repository="https://aorepo.org/maven2/"
       scmUrl="@{project.scm.url}"
+      newsAllowRobots="true"
     >
       <ul>
         <li>Updated plugin versions.</li>
@@ -442,6 +455,7 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
       artifactId="@{documented.artifactId}"
       repository="https://aorepo.org/maven2/"
       scmUrl="@{project.scm.url}"
+      newsAllowRobots="true"
     >
       <ul>
         <li>Updated to latest release of <ao:a href="https://github.com/s4u/pgp-keys-map">PGP keys map to maven artifacts</ao:a>.</li>
@@ -457,6 +471,7 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
       artifactId="@{documented.artifactId}"
       repository="https://aorepo.org/maven2/"
       scmUrl="@{project.scm.url}"
+      newsAllowRobots="true"
     >
       <ul>
         <li>Updated to latest release of <ao:a href="https://github.com/s4u/pgp-keys-map">PGP keys map to maven artifacts</ao:a>.</li>
@@ -471,6 +486,7 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
       artifactId="@{documented.artifactId}"
       repository="https://aorepo.org/maven2/"
       scmUrl="@{project.scm.url}"
+      newsAllowRobots="true"
     >
       <ul>
         <li>Updated to latest release of <ao:a href="https://github.com/s4u/pgp-keys-map">PGP keys map to maven artifacts</ao:a>.</li>
@@ -485,6 +501,7 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
       artifactId="@{documented.artifactId}"
       repository="https://aorepo.org/maven2/"
       scmUrl="@{project.scm.url}"
+      newsAllowRobots="true"
     >
       <ul>
         <li>Updated to <ao:a href="https://axis.apache.org/axis2/java/core/release-notes/1.8.1.html">Apache Axis2 1.8.1</ao:a>.</li>
@@ -499,6 +516,7 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
       artifactId="@{documented.artifactId}"
       repository="https://aorepo.org/maven2/"
       scmUrl="@{project.scm.url}"
+      newsAllowRobots="true"
     >
       <ul>
         <li>Updated to <ao:a href="https://checkstyle.org/releasenotes.html#Release_10.3">Checkstyle 10.3</ao:a>.</li>
@@ -514,6 +532,7 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
       artifactId="@{documented.artifactId}"
       repository="https://aorepo.org/maven2/"
       scmUrl="@{project.scm.url}"
+      newsAllowRobots="true"
     >
       <ul>
         <li>
@@ -531,6 +550,7 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
       artifactId="@{documented.artifactId}"
       repository="https://aorepo.org/maven2/"
       scmUrl="@{project.scm.url}"
+      newsAllowRobots="true"
     >
       <ul>
         <li>Updated to latest release of <ao:a href="https://github.com/s4u/pgp-keys-map">PGP keys map to maven artifacts</ao:a>.</li>
@@ -578,6 +598,7 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
       artifactId="@{documented.artifactId}"
       repository="https://aorepo.org/maven2/"
       scmUrl="@{project.scm.url}"
+      newsAllowRobots="true"
     >
       <ul>
         <li>Updated to latest release of <ao:a href="https://github.com/s4u/pgp-keys-map">PGP keys map to maven artifacts</ao:a>.</li>
@@ -605,6 +626,7 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
       artifactId="@{documented.artifactId}"
       repository="https://aorepo.org/maven2/"
       scmUrl="@{project.scm.url}"
+      newsAllowRobots="true"
     >
       <ul>
         <li>"skip-war" profile improvements to increase local development speed:
@@ -634,6 +656,7 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
       artifactId="@{documented.artifactId}"
       repository="https://aorepo.org/maven2/"
       scmUrl="@{project.scm.url}"
+      newsAllowRobots="true"
     >
       <ul>
         <li>Updated to latest release of <ao:a href="https://github.com/s4u/pgp-keys-map">PGP keys map to maven artifacts</ao:a>.</li>
@@ -648,6 +671,7 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
       artifactId="@{documented.artifactId}"
       repository="https://aorepo.org/maven2/"
       scmUrl="@{project.scm.url}"
+      newsAllowRobots="true"
     >
       <ul>
         <li>
@@ -667,6 +691,7 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
       artifactId="@{documented.artifactId}"
       repository="https://aorepo.org/maven2/"
       scmUrl="@{project.scm.url}"
+      newsAllowRobots="true"
     >
       <ul>
         <li>
@@ -690,6 +715,7 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
       artifactId="@{documented.artifactId}"
       repository="https://aorepo.org/maven2/"
       scmUrl="@{project.scm.url}"
+      newsAllowRobots="true"
     >
       <ul>
         <li>Enabled <ao:a href="https://sonatype.github.io/ossindex-maven/maven-plugin/">dependency audits</ao:a> on builds.</li>
@@ -751,6 +777,7 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
       artifactId="@{documented.artifactId}"
       repository="https://aorepo.org/maven2/"
       scmUrl="@{project.scm.url}"
+      newsAllowRobots="true"
     >
       <ul>
         <li>Java updates:
@@ -771,6 +798,7 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
       artifactId="@{documented.artifactId}"
       repository="https://aorepo.org/maven2/"
       scmUrl="@{project.scm.url}"
+      newsAllowRobots="true"
     >
       <ul>
         <li>Updated plugin versions.</li>
@@ -794,6 +822,7 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
       artifactId="@{documented.artifactId}"
       repository="https://aorepo.org/maven2/"
       scmUrl="@{project.scm.url}"
+      newsAllowRobots="true"
     >
       <ul>
         <li>
@@ -824,6 +853,7 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
       artifactId="@{documented.artifactId}"
       repository="https://aorepo.org/maven2/"
       scmUrl="@{project.scm.url}"
+      newsAllowRobots="true"
     >
       <ul>
         <li>Added default NetBeans server settings.</li>
@@ -847,6 +877,7 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
       artifactId="@{documented.artifactId}"
       repository="https://aorepo.org/maven2/"
       scmUrl="@{project.scm.url}"
+      newsAllowRobots="true"
     >
       <ul>
         <li>Added default NetBeans formatting settings.</li>
@@ -873,6 +904,7 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
       artifactId="@{documented.artifactId}"
       repository="https://aorepo.org/maven2/"
       scmUrl="@{project.scm.url}"
+      newsAllowRobots="true"
     >
       <ul>
         <li>Corrected the default value for the Maven build property <code>documented.javadoc.link.javaee</code>.</li>
@@ -942,6 +974,7 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
       artifactId="@{documented.artifactId}"
       repository="https://aorepo.org/maven2/"
       scmUrl="@{project.scm.url}"
+      newsAllowRobots="true"
     >
       <ul>
         <li>
@@ -1013,6 +1046,7 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
       artifactId="@{documented.artifactId}"
       repository="https://aorepo.org/maven2/"
       scmUrl="@{project.scm.url}"
+      newsAllowRobots="true"
     >
       <ul>
         <li>
@@ -1038,6 +1072,7 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
       artifactId="@{documented.artifactId}"
       repository="https://aorepo.org/maven2/"
       scmUrl="@{project.scm.url}"
+      newsAllowRobots="true"
     >
       <ul>
         <li>Changed default Java version from 1.7 to 1.8</li>
@@ -1119,6 +1154,7 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
       artifactId="@{documented.artifactId}"
       repository="https://aorepo.org/maven2/"
       scmUrl="@{project.scm.url}"
+      newsAllowRobots="true"
     >
       <ul>
         <li>
@@ -1136,6 +1172,7 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
       artifactId="@{documented.artifactId}"
       repository="https://aorepo.org/maven2/"
       scmUrl="@{project.scm.url}"
+      newsAllowRobots="true"
     >
       <ul>
         <li>Java updates:
@@ -1157,6 +1194,7 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
       artifactId="@{documented.artifactId}"
       repository="https://aorepo.org/maven2/"
       scmUrl="@{project.scm.url}"
+      newsAllowRobots="true"
     >
       <ul>
         <li>
@@ -1182,6 +1220,7 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
       artifactId="@{documented.artifactId}"
       repository="https://aorepo.org/maven2/"
       scmUrl="@{project.scm.url}"
+      newsAllowRobots="true"
     >
       <ul>
         <li>
@@ -1199,6 +1238,7 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
       artifactId="@{documented.artifactId}"
       repository="https://aorepo.org/maven2/"
       scmUrl="@{project.scm.url}"
+      newsAllowRobots="true"
     >
       <ul>
         <li>New profile "POST-SNAPSHOT" that enables the use of
@@ -1261,6 +1301,7 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
       artifactId="@{documented.artifactId}"
       repository="https://aorepo.org/maven2/"
       scmUrl="@{project.scm.url}"
+      newsAllowRobots="true"
     >
       <ul>
         <li>
@@ -1299,6 +1340,7 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
       artifactId="@{documented.artifactId}"
       repository="https://aorepo.org/maven2/"
       scmUrl="@{project.scm.url}"
+      newsAllowRobots="true"
     >
       <ul>
         <li>Changed <ao:a href="https://aorepo.org/maven2/">AORepo Maven artifact repository</ao:a> URL to include trailing slash.</li>
@@ -1346,6 +1388,7 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
       artifactId="@{documented.artifactId}"
       repository="https://aorepo.org/maven2/"
       scmUrl="@{project.scm.url}"
+      newsAllowRobots="true"
     >
       <ul>
         <li>New AORepo project.</li>
