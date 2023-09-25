@@ -28,12 +28,12 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
     <groupId>org.aorepo</groupId><artifactId>aorepo-parent</artifactId><version>1.24.0<!-- -POST-SNAPSHOT --></version>
   </parent>
 
-  <groupId>org.aorepo</groupId><artifactId>aorepo-parent-book</artifactId><version>1.24.0</version>
+  <groupId>org.aorepo</groupId><artifactId>aorepo-parent-book</artifactId><version>1.24.0-POST-SNAPSHOT</version>
   <packaging>jar</packaging>
 
   <properties>
     <!-- Must be set to ${git.commit.time} for snapshots or ISO 8601 timestamp for releases. -->
-    <project.build.outputTimestamp>2023-09-25T00:19:55Z</project.build.outputTimestamp>
+    <project.build.outputTimestamp>${git.commit.time}</project.build.outputTimestamp>
     <module.name>org.aorepo.parent.book</module.name>
     <subproject.subpath>book/</subproject.subpath>
     <!-- These values are copied from the project being documented -->
@@ -76,7 +76,7 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
     <connection>scm:git:git://github.com/ao-apps/aorepo-parent.git</connection>
     <developerConnection>scm:git:git@github.com:ao-apps/aorepo-parent.git</developerConnection>
     <url>https://github.com/ao-apps/aorepo-parent</url>
-    <tag>aorepo-parent-book-1.24.0</tag>
+    <tag>HEAD</tag>
   </scm>
 
   <issueManagement>
