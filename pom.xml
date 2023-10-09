@@ -2155,7 +2155,6 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
                       <message>"POST-SNAPSHOT" profile may only be used for *-SNAPSHOT versions.</message>
                     </requireSnapshotVersion>
                   </rules>
-                  <fail>true</fail>
                 </configuration>
               </execution>
             </executions>
@@ -3429,7 +3428,6 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
                       <message>"development" profile may only be used for *-SNAPSHOT versions.</message>
                     </requireSnapshotVersion>
                   </rules>
-                  <fail>true</fail>
                 </configuration>
               </execution>
             </executions>
@@ -3627,7 +3625,6 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
                       <profiles>POST-SNAPSHOT</profiles>
                     </requireActiveProfile>
                   </rules>
-                  <fail>true</fail>
                 </configuration>
               </execution>
             </executions>
@@ -3693,7 +3690,6 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
                       <profiles>jenkins</profiles>
                     </requireActiveProfile>
                   </rules>
-                  <fail>true</fail>
                 </configuration>
               </execution>
             </executions>
@@ -3760,7 +3756,6 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
                       <profiles>nexus</profiles>
                     </requireActiveProfile>
                   </rules>
-                  <fail>true</fail>
                 </configuration>
               </execution>
             </executions>
@@ -3820,7 +3815,6 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
                       <message>"release" profile may not be used for *-SNAPSHOT versions.</message>
                     </requireReleaseVersion>
                   </rules>
-                  <fail>true</fail>
                 </configuration>
               </execution>
             </executions>
