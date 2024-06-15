@@ -3145,7 +3145,7 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
           <plugin>
             <groupId>org.sonatype.plugins</groupId><artifactId>nexus-staging-maven-plugin</artifactId>
             <configuration>
-              <serverId>ossrh-aoindustries</serverId>
+              <serverId>${nexusServerId}</serverId>
               <nexusUrl>${nexusUrl}</nexusUrl>
               <autoReleaseAfterClose>true</autoReleaseAfterClose>
             </configuration>
