@@ -270,9 +270,11 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
     <osgi.permissions><!-- Default is none --></osgi.permissions>
     <!-- Set to "-POST-SNAPSHOT" by activating the "POST-SNAPSHOT" profile to use post-release dependencies -->
     <POST-SNAPSHOT><!-- -POST-SNAPSHOT --></POST-SNAPSHOT>
-    <!-- org.aorepo is not on any Sonatype Nexus Repository Manager -->
-    <nexusUrl />
+    <!-- OSSRH Staging API -->
+    <!-- No nexus:
+    <nexusServerId />
     <nexus.skipNexusStagingDeployMojo>false</nexus.skipNexusStagingDeployMojo>
+    -->
     <!-- WAR exclusions -->
     <maven-war-plugin.warSourceExcludes.default>
       <!-- This file only exists so NetBeans knows the path to deploy the application. -->
@@ -1185,20 +1187,9 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
       </snapshots>
     </pluginRepository>
     <pluginRepository>
-      <id>sonatype-nexus-snapshots</id>
-      <name>Sonatype Nexus Snapshots</name>
-      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-      <releases>
-        <enabled>false</enabled>
-      </releases>
-      <snapshots>
-        <checksumPolicy>fail</checksumPolicy>
-      </snapshots>
-    </pluginRepository>
-    <pluginRepository>
-      <id>sonatype-nexus-snapshots-s01</id>
-      <name>Sonatype Nexus Snapshots S01</name>
-      <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
+      <id>central-snapshots</id>
+      <name>Central Snapshot Repository</name>
+      <url>https://central.sonatype.com/repository/maven-snapshots/</url>
       <releases>
         <enabled>false</enabled>
       </releases>
@@ -1221,20 +1212,9 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
       </snapshots>
     </repository>
     <repository>
-      <id>sonatype-nexus-snapshots</id>
-      <name>Sonatype Nexus Snapshots</name>
-      <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-      <releases>
-        <enabled>false</enabled>
-      </releases>
-      <snapshots>
-        <checksumPolicy>fail</checksumPolicy>
-      </snapshots>
-    </repository>
-    <repository>
-      <id>sonatype-nexus-snapshots-s01</id>
-      <name>Sonatype Nexus Snapshots S01</name>
-      <url>https://s01.oss.sonatype.org/content/repositories/snapshots</url>
+      <id>central-snapshots</id>
+      <name>Central Snapshot Repository</name>
+      <url>https://central.sonatype.com/repository/maven-snapshots/</url>
       <releases>
         <enabled>false</enabled>
       </releases>
@@ -3199,7 +3179,7 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
             <groupId>org.sonatype.plugins</groupId><artifactId>nexus-staging-maven-plugin</artifactId>
             <configuration>
               <serverId>${nexusServerId}</serverId>
-              <nexusUrl>${nexusUrl}</nexusUrl>
+              <nexusUrl>https://ossrh-staging-api.central.sonatype.com/</nexusUrl>
               <autoReleaseAfterClose>true</autoReleaseAfterClose>
             </configuration>
             <!- -
