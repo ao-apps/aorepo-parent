@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
 aorepo-parent - Parent POM for all AORepo packages.
-Copyright (C) 2017, 2019, 2020, 2021, 2022  AO Industries, Inc.
+Copyright (C) 2017, 2019, 2020, 2021, 2022, 2025  AO Industries, Inc.
     support@aoindustries.com
     7262 Bull Pen Cir
     Mobile, AL 36695
@@ -47,6 +47,7 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
         arg.license="lgpl-3.0"
         arg.scmUrl="@{project.scm.url}"
         arg.githubBuildWorkflow="Build"
+        arg.githubBuildFile="build.yml"
         arg.groupId="@{project.groupId}"
         arg.artifactId="@{documented.artifactId}"
         arg.sonarQualityGate="true"
