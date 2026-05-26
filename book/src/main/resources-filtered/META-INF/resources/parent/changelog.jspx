@@ -37,7 +37,7 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
     shortTitle="Changelog"
     tocLevels="1"
     datePublished="2017-07-23T15:20:14-05:00"
-    dateModified="2026-05-08T17:01:07Z"
+    dateModified="2026-05-25T23:15:05Z"
     allowRobots="false"
   >
     <c:set var="latestRelease" value="1.24.2" />
@@ -104,6 +104,13 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
             </ul>
           </li>
           <li>Updated plugin dependencies.</li>
+          <li>Java updates:
+            <ol>
+              <li>Java 25 is now current stable</li>
+              <li>Java 26 is now current stable</li>
+              <li>Java 27 is new beta</li>
+            </ol>
+          </li>
         </ul>
       </changelog:release>
     </c:if>
