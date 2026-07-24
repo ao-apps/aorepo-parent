@@ -3169,6 +3169,9 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
         <plugins>
           <plugin>
             <groupId>org.apache.maven.plugins</groupId><artifactId>maven-checkstyle-plugin</artifactId>
+            <configuration>
+              <skip>true</skip>
+            </configuration>
             <executions>
               <execution>
                 <!-- Overriding phase to be "none" to fully disregard ${checkstyle.phase} -->
