@@ -1282,9 +1282,9 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
       </snapshots>
     </pluginRepository>
     <pluginRepository>
-      <id>central-snapshots</id>
-      <name>Central Snapshot Repository</name>
-      <url>https://central.sonatype.com/repository/maven-snapshots/</url>
+      <id>aoapps-snapshots</id>
+      <name>AOApps Snapshot Repository</name>
+      <url>https://snapshots.maven.aoapps.com/</url>
       <releases>
         <enabled>false</enabled>
       </releases>
@@ -1317,9 +1317,9 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
       </snapshots>
     </repository>
     <repository>
-      <id>central-snapshots</id>
-      <name>Central Snapshot Repository</name>
-      <url>https://central.sonatype.com/repository/maven-snapshots/</url>
+      <id>aoapps-snapshots</id>
+      <name>AOApps Snapshot Repository</name>
+      <url>https://snapshots.maven.aoapps.com/</url>
       <releases>
         <enabled>false</enabled>
       </releases>
@@ -3904,10 +3904,6 @@ along with aorepo-parent.  If not, see <https://www.gnu.org/licenses/>.
                     <requireActiveProfile>
                       <message>"jenkins-deploy" requires "jenkins" profile</message>
                       <profiles>jenkins</profiles>
-                    </requireActiveProfile>
-                    <requireActiveProfile>
-                      <message>"jenkins-deploy" requires "nexus" profile</message>
-                      <profiles>nexus</profiles>
                     </requireActiveProfile>
                   </rules>
                 </configuration>
